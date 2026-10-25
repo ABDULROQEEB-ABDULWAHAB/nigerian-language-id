@@ -44,7 +44,7 @@ Yoruba, Igbo, Hausa, Ego, Anaang, Efik, Ibibio, Idoma, Igala, Nupe, Tiv, Urhobo,
 |------|---------|
 | `Nigerian_LID_Training.ipynb` | Training and export notebook (run on Colab with a T4 GPU) |
 | `Nigerian_LID_Demo.ipynb` | Demo notebook that loads the published model and launches a Gradio app |
-| `images/` | Demo screenshots |
+| `images/` | 
 
 ## Run the training notebook
 
@@ -74,5 +74,5 @@ Based on the team's original hackathon notebook. This version was retrained, pac
 ## Acknowledgements and licenses
 
 - Base model: [microsoft/wavlm-base-plus](https://huggingface.co/microsoft/wavlm-base-plus).
-- Dataset: [Data-Science-Nigeria/dsn-2026-lid-train](https://huggingface.co/datasets/Data-Science-Nigeria/dsn-2026-lid-train), whose audio has mixed per-source licenses. This repository does not redistribute any audio. See the dataset page for terms.
-- Code license: MIT (add a `LICENSE` file when creating the repo).
+- Dataset: [Data-Science-Nigeria/dsn-2026-lid-train](https://huggingface.co/datasets/Data-Science-Nigeria/dsn-2026-lid-train), whose audio has mixed per-source licenses. 
+- Code license: MIT
