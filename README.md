@@ -1,15 +1,15 @@
-﻿# Nigerian Language Identification
+# Nigerian Language Identification
 
-[![Open Demo In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ABDULROQEEB-ABDULWAHAB/nigerian-language-id/blob/main/Nigerian_LID_Demo.ipynb)
+[![Open Demo In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/nigerian-language-id/blob/main/Nigerian_LID_Demo.ipynb)
 [![Model on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Model-Hugging%20Face-yellow)](https://huggingface.co/AbdulroqeebA/wavlm-base-plus-nigerian-lid)
 
-Speech language identification for 13 Nigerian language classes, built with a fine-tuned WavLM Base Plus model at the **DSN AI Bootcamp 2026 hackathon** (Nigerian Language Identification Challenge).
+Speech language identification for **13 Nigerian language classes**, built with a fine-tuned **WavLM Base Plus** model at the **DSN AI Bootcamp 2026 hackathon** (Nigerian Language Identification Challenge).
 
 Give it a short speech clip and it returns the top 3 most likely languages with confidence scores.
 
 ## Demo
 
-Click the Open Demo In Colab badge above, choose *Runtime → Run all, and open the `gradio.live` link printed by the last cell. Upload or record a short clip to try it. No GPU and no token are needed, because the model is public.
+Click the **Open Demo In Colab** badge above, choose *Runtime → Run all*, and open the `gradio.live` link printed by the last cell. Upload or record a short clip to try it. No GPU and no token are needed, because the model is public.
 
 ![Demo screenshot](images/demo.png)
 
@@ -31,11 +31,11 @@ Yoruba, Igbo, Hausa, Ego, Anaang, Efik, Ibibio, Idoma, Igala, Nupe, Tiv, Urhobo,
 
 ## How it works
 
-1. Data: `Data-Science-Nigeria/dsn-2026-lid-train` from Hugging Face, resampled to 16 kHz, clips cropped or padded to 10 seconds. Nupe had very few examples, so 26 of its training clips were moved into validation so every class is represented there.
-2. Model: `microsoft/wavlm-base-plus` fine-tuned for audio classification (about 94.6M parameters).
-3. Imbalance handling: dampened class weights.
-4. Augmentation: pitch shift, noise, gain, and a low-pass filter to mimic phone audio and reduce speaker memorization.
-5. Training: up to 4 epochs with FP16 and early stopping on macro F1.
+1. **Data:** `Data-Science-Nigeria/dsn-2026-lid-train` from Hugging Face, resampled to 16 kHz, clips cropped or padded to 10 seconds. Nupe had very few examples, so 26 of its training clips were moved into validation so every class is represented there.
+2. **Model:** `microsoft/wavlm-base-plus` fine-tuned for audio classification (about 94.6M parameters).
+3. **Imbalance handling:** dampened class weights.
+4. **Augmentation:** pitch shift, noise, gain, and a low-pass filter to mimic phone audio and reduce speaker memorization.
+5. **Training:** up to 4 epochs with FP16 and early stopping on macro F1.
 6. **Calibration:** per-class bias offsets tuned on validation logits to raise macro F1, applied to the classifier bias in the saved weights.
 
 ## Repository contents
@@ -67,6 +67,7 @@ Built together, with equal contribution, at the DSN AI Bootcamp 2026 hackathon b
 - [Olawale Anthony Arowolo](https://www.linkedin.com/in/olawale-anthony-arowolo-5707b7292/)
 - [Nnaluo Onyeka Collins](https://www.linkedin.com/in/nnaluo-onyeka-collins-4248a9370/)
 - [Abdulwahab Abdulroqeeb Opeyemi](https://www.linkedin.com/in/abdulwahababdulroqeeb/)
+- [Moshood Abdulganiyu](https://www.linkedin.com/in/moshood-abdulganiyu/)
 
 Based on the team's original hackathon notebook. This version was retrained, packaged, and published by the team.
 
@@ -75,4 +76,3 @@ Based on the team's original hackathon notebook. This version was retrained, pac
 - Base model: [microsoft/wavlm-base-plus](https://huggingface.co/microsoft/wavlm-base-plus).
 - Dataset: [Data-Science-Nigeria/dsn-2026-lid-train](https://huggingface.co/datasets/Data-Science-Nigeria/dsn-2026-lid-train), whose audio has mixed per-source licenses. This repository does not redistribute any audio. See the dataset page for terms.
 - Code license: MIT (add a `LICENSE` file when creating the repo).
-
