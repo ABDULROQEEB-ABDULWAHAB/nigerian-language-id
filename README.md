@@ -1,6 +1,6 @@
 ﻿# Nigerian Language Identification
 
-[![Open Demo In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/nigerian-language-id/blob/main/Nigerian_LID_Demo.ipynb)
+[![Open Demo In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ABDULROQEEB-ABDULWAHAB/nigerian-language-id/blob/main/Nigerian_LID_Demo.ipynb)
 [![Model on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Model-Hugging%20Face-yellow)](https://huggingface.co/AbdulroqeebA/wavlm-base-plus-nigerian-lid)
 
 Speech language identification for 13 Nigerian language classes, built with a fine-tuned WavLM Base Plus model at the **DSN AI Bootcamp 2026 hackathon** (Nigerian Language Identification Challenge).
