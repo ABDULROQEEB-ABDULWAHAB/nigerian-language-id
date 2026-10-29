@@ -11,7 +11,7 @@ Give it a short speech clip and it returns the top 3 most likely languages with 
 
 Click the **Open Demo In Colab** badge above, choose *Runtime → Run all*, and open the `gradio.live` link printed by the last cell. Upload or record a short clip to try it. No GPU and no token are needed, because the model is public.
 
-![Demo screenshot](images/demo.png)
+   ![Demo screenshot](demo.png)
 
 ## Results
 
