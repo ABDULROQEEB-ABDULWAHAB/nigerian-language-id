@@ -1,6 +1,6 @@
 # Nigerian Language Identification
 
-[![Open Demo In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/nigerian-language-id/blob/main/Nigerian_LID_Demo.ipynb)
+[![Open Demo In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ABDULROQEEB-ABDULWAHAB/nigerian-language-id/blob/main/Nigerian_LID_Demo.ipynb)
 [![Model on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Model-Hugging%20Face-yellow)](https://huggingface.co/AbdulroqeebA/wavlm-base-plus-nigerian-lid)
 
 Speech language identification for **13 Nigerian language classes**, built with a fine-tuned **WavLM Base Plus** model at the **DSN AI Bootcamp 2026 hackathon** (Nigerian Language Identification Challenge).
@@ -44,7 +44,7 @@ Yoruba, Igbo, Hausa, Ego, Anaang, Efik, Ibibio, Idoma, Igala, Nupe, Tiv, Urhobo,
 |------|---------|
 | `Nigerian_LID_Training.ipynb` | Training and export notebook (run on Colab with a T4 GPU) |
 | `Nigerian_LID_Demo.ipynb` | Demo notebook that loads the published model and launches a Gradio app |
-| `images/` | 
+| `images/` | Demo screenshots |
 
 ## Run the training notebook
 
@@ -74,5 +74,5 @@ Based on the team's original hackathon notebook. This version was retrained, pac
 ## Acknowledgements and licenses
 
 - Base model: [microsoft/wavlm-base-plus](https://huggingface.co/microsoft/wavlm-base-plus).
-- Dataset: [Data-Science-Nigeria/dsn-2026-lid-train](https://huggingface.co/datasets/Data-Science-Nigeria/dsn-2026-lid-train), whose audio has mixed per-source licenses. 
-- Code license: MIT
+- Dataset: [Data-Science-Nigeria/dsn-2026-lid-train](https://huggingface.co/datasets/Data-Science-Nigeria/dsn-2026-lid-train), whose audio has mixed per-source licenses. This repository does not redistribute any audio. See the dataset page for terms.
+- Code license: MIT (add a `LICENSE` file when creating the repo).
